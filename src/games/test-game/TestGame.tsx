@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 export default function TestGame() {
   const [player, setPlayer] = useState({ x: 140, y: 140 })
@@ -11,7 +11,6 @@ export default function TestGame() {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      // Prevent page scrolling when playing
       if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)) {
         e.preventDefault()
       }
