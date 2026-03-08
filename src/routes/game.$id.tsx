@@ -24,13 +24,13 @@ function RouteComponent() {
           {game ? "Use Arrow Keys to play." : "This game doesn't exist yet."}
         </p>
       </div>
-      <div className="from-primary/20 to-secondary border-muted relative rounded-2xl border bg-gradient-to-tr p-1 shadow-2xl">
+      <div className="from-primary/20 to-secondary border-muted relative rounded-2xl border bg-linear-to-tr p-1 shadow-2xl">
         <div className="bg-card flex items-center justify-center overflow-hidden rounded-xl p-4">
           {/* 3. Render the dynamic component if it exists */}
           {GameComponent ? (
             <GameComponent />
           ) : (
-            <div className="text-muted-foreground flex h-[300px] w-[300px] items-center justify-center italic">
+            <div className="text-muted-foreground flex h-[600px] w-[600px] items-center justify-center italic">
               Game component not found.
             </div>
           )}

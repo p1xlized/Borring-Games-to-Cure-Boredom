@@ -13,7 +13,7 @@ function RouteComponent() {
 
   return (
     <main className="flex items-center justify-center p-4">
-      <div className="border-muted bg-secondary grid min-h-128 min-w-128 grid-cols-1 gap-6 rounded-xl p-6 sm:grid-cols-2 md:grid-cols-3">
+      <div className="border-muted bg-secondary grid min-h-128 min-w-lg grid-cols-1 gap-6 rounded-xl p-6 sm:grid-cols-2 md:grid-cols-3">
         {games.map((game: Game, index: number) => (
           <motion.div
             key={game.id || index}
