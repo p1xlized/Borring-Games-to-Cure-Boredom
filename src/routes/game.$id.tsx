@@ -30,7 +30,7 @@ function RouteComponent() {
           {GameComponent ? (
             <GameComponent />
           ) : (
-            <div className="text-muted-foreground flex h-[600px] w-[600px] items-center justify-center italic">
+            <div className="text-muted-foreground flex h-75 w-75 items-center justify-center italic">
               Game component not found.
             </div>
           )}
